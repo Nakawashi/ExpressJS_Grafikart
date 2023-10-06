@@ -1,0 +1,21 @@
+<%- include ('../pages/header') %>
+
+<div class="ui comments">
+		<div class="comment">
+			<a class="avatar" href="/message/<%= message.id %>">
+				<img src="https://robohash.org/568ff1e19b34761bbe00eec7deddbb99?set=set4&bgset=&size=400x400">
+			</a>
+			<div class="content">
+				<div class="metadata">
+					<div class="date">
+						<%= message.created_at.fromNow() %>
+					</div>
+				</div>
+				<div class="text">
+					<%= message.content %>
+				</div>
+			</div>
+		</div>
+</div>
+
+<%- include ('../pages/footer') %>
